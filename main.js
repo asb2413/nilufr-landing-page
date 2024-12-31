@@ -49,11 +49,4 @@ navbarToggler.addEventListener('click', () => {
   navbarLinks.classList.toggle('show');
 });
 
-// Add active class to the clicked link
-const links = document.querySelectorAll('.navbar-links a');
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    links.forEach(link => link.parentElement.classList.remove('active'));
-    link.parentElement.classList.add('active');
-  });
-});
+
