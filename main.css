@@ -31,7 +31,7 @@ body {
 .navbar {
   width: 100%;
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 0;
   background-color: transparent;
   color: white;
@@ -154,7 +154,7 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 88vh;
   background: url('src/workarea2.jpg') no-repeat center center/cover !important;
   display: flex;
   align-items: center;
@@ -366,116 +366,86 @@ body {
   
 
 
-.about-container {
-  position: relative;
-  
-  margin: 30px 0;
+
+
+.about-us {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  padding: 20px;
   grid-row: 2;
+  height: 80vh;
 }
 
-.about-title {
-  width: 100%;
-  z-index: 2;
-  color: #464646;
-  text-align: center;
-  font-size: 55px;
-  font-weight: 700;
-  margin-top: 8px;
-}
-
-@media (max-width: 800px) {
-  .about-title {
-    text-align: center;
-    font-size: 50px;
-  }
-}
-
-.about-content-container {
-  z-index: 2;
-  width: 100%;
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
   height: 100%;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  
 }
 
-@media (max-width: 800px) {
-  .about-content-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-  }
-}
-
-.about-main-text {
-  font-size: 28px;
-  width: 95%;
-  text-align:center;
-}
-
-@media (max-width: 600px) {
-  .about-main-text {
-    font-size: 3.7vw;
-    text-align: center;
-    width: 90%;
-  }
-}
-
-.about-logo {
-  width: 100%;
-  max-width: 300px; /* Ensure the vertical image doesn't exceed a specific size */
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 15px;
-}
-
-.about-logo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  object-fit: contain;
-}
-
-@media (max-width: 800px) {
-  .about-logo {
-    max-width: 50%; /* Adjust for smaller screens */
-  }
-
-  .about-logo img {
-    max-width: 100%;
-    margin-top: 15px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .about-main-text {
-    font-size: 28px;
-  }
-}
-
-
-/* Container styling */
-.services-container {
-  
-  direction: rtl; /* RTL layout */
+.logo-section {
+  flex: 1;
   text-align: center;
-  padding: 2rem;
-  background:#F4F4F4;
+  background: url('src/buidkings.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.logo-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(52, 43, 10, 0.7608);
+  z-index: 0;
+}
+
+.logo-section h1,
+.logo-section p {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 150px;
+  margin: 0 auto 20px;
+  z-index: 1;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-section h2 {
+  color: #f7a81b;
+  margin-bottom: 10px;
+}
+
+.text-section p {
   color: #333;
-  grid-row: 4;
-  
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .logo-section,
+  .text-section {
+    flex: 1;
+  }
 }
 
 
